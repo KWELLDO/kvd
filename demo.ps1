@@ -1,7 +1,7 @@
 # KVD Demo Script
 using namespace System.IO
 
-Import-Module D:\KWD\kvd\tools\KvdModule.psm1 -Force
+Import-Module KvdModule -Force
 
 $demoFile = [Path]::GetFullPath("$PSScriptRoot/examples/demo.kvd")
 
@@ -86,3 +86,4 @@ Remove-Item $tmpFile -Force
 
 Write-Host "`nDone! File: $demoFile" -ForegroundColor Green
 Write-Host "Try: Get-KvdHistory -Path $demoFile -Detailed"
+
